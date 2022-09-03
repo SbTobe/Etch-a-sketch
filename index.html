@@ -11,9 +11,9 @@
     <title>Document</title>
 </head>
 <body>
-
-<div class="container">
     <div class="title"><h1>Etch a sketch</h1></div>
+<div class="container">
+    
     <div class="content">
         <div class="board">
         </div>
@@ -21,7 +21,9 @@
                 <button id="butt">Black</button>
                 <button id="butt">Color</button>
                 <button id="butt">Erase</button>
-                <button id="butt">Clear</button>
+                
+                <input type="color" class="clr">
+                <button id="butt" onclick="resetBoard()">Clear</button>
             </div>
             <input type="text" placeholder="Size of board" value="16" onchange="changeSize(this.value)"/>
             <button>Set Size</button>
@@ -34,11 +36,3 @@
 </html>
 
 
-<!-- <div class="buttons">
-    
-    <button id="butt">Black</button>
-    <button id="butt">Color</button>
-    <button id="butt">Erase</button>
-    <button id="butt">Clear</button>
-   
-</div> -->
