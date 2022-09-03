@@ -1,38 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+
     <script src="app.js" defer></script>
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="title"><h1>Etch a sketch</h1></div>
-<div class="container">
-    
-    <div class="content">
-        <div class="board">
+    <div class="container">
+      <div class="content">
+        <div class="board"></div>
+        <div class="buttons">
+          <input
+            type="text"
+            value="16"
+            onchange="changeSize(this.value)"
+           
+          />
+          <button class="butts">Set Size</button>
+
+          <input type="color" class="clr" />
+          <button class="butts" onclick="resetBoard()">Clear</button>
         </div>
-            <div class="buttons">
-                <button id="butt">Black</button>
-                <button id="butt">Color</button>
-                <button id="butt">Erase</button>
-                
-                <input type="color" class="clr">
-                <button id="butt" onclick="resetBoard()">Clear</button>
-            </div>
-            <input type="text" placeholder="Size of board" value="16" onchange="changeSize(this.value)"/>
-            <button>Set Size</button>
-        
+      </div>
     </div>
-</div>
-
-
-</body>
+  </body>
 </html>
-
-

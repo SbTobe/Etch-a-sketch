@@ -1,5 +1,7 @@
 let color = document.querySelector(".clr");
 
+let wipe = "white";
+
 function populateBoard(size) {
   let board = document.querySelector(".board");
   let squares = board.querySelectorAll("div");
@@ -23,7 +25,7 @@ function changeSize(input) {
   if (input >= 2 && input <= 100) {
     populateBoard(input);
   } else {
-    console.log("to high or too low");
+    console.log("Pick a value between 2 and 99");
   }
 }
 
@@ -35,8 +37,4 @@ function resetBoard() {
   let board = document.querySelector(".board");
   let squares = board.querySelectorAll("div");
   squares.forEach((div) => (div.style.backgroundColor = "white"));
-}
-
-function changeColor(choice) {
-  color = choice;
 }
